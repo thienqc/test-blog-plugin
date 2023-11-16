@@ -1,0 +1,82 @@
+site_name: thienqc
+site_description: thienqc's blog
+site_url: https://thienqc.github.io/blog/
+site_author: thienqc
+
+theme:
+    name: 'material'
+    # custom_dir: overrides
+    icon:
+      logo: fontawesome/solid/brain
+      # favicon: assets/meta/brain-solid.png
+    font:
+        text: Roboto
+        code: Roboto Mono
+    language: en
+    
+    palette:
+      # Light mode
+      - media: "(prefers-color-scheme: light)"
+        scheme: default
+        primary: deep purple
+        accent: light blue
+    features:
+      - search.suggest
+      - search.highlight
+      - navigation.footer
+
+copyright: Copyright &copy; 2023 thienqc
+
+
+
+plugins:
+  - search
+  - autolinks
+  - callouts
+  - blog:
+      blog_dir: .
+      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - toc:
+      permalink: true
+
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/yds.thienqc/
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/thienqc/
+
