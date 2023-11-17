@@ -3,43 +3,6 @@ site_description: thienqc's blog
 site_url: https://thienqc.github.io/blog/
 site_author: thienqc
 
-plugins:
-  - search
-  - autolinks
-  - git-revision-date-localized:
-      type: timeago
-  - minify:
-      minify_html: true
-  - section-index
-
-markdown_extensions:
-  - abbr
-  - admonition
-  - meta
-  - def_list
-  - toc:
-      permalink: ⚑
-      baselevel: 2
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: '!!python/name:pymdownx.emoji.to_svg'
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
-
 theme:
     name: 'material'
     # custom_dir: overrides
@@ -58,14 +21,58 @@ theme:
         primary: deep purple
         accent: light blue
     features:
-      - navigation.footer
-      - navigation.instant
-      - navigation.top
-      - content.code.annotate
       - search.suggest
       - search.highlight
+      - navigation.footer
 
 copyright: Copyright &copy; 2023 thienqc
+
+
+
+plugins:
+  - search
+  # - roamlinks
+  - autolinks
+  - callouts
+  - blogging:
+      dirs:
+        - blog
+      template: override/custom-blog.html
+      features:
+        tags:
+          index_page: tags.md
+          insert: bottom
+      time_format: ' %d-%m-%Y '
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - footnotes
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - toc:
+      permalink: true
 
 
 
@@ -75,4 +82,6 @@ extra:
       link: https://www.facebook.com/yds.thienqc/
     - icon: fontawesome/brands/instagram
       link: https://www.instagram.com/thienqc/
-
+  analytics:
+    provider: google
+    property: G-WQ6QJ2DK27
