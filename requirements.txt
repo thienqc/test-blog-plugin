@@ -1,3 +1,4 @@
 mkdocs-material
 mkdocs-callouts
 mkdocs-autolinks-plugin
+mkdocs-git-revision-date-localized-plugin
