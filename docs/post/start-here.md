@@ -10,6 +10,10 @@ slug: start-here
 
 # Start Here
 
+[chuyen-tau-dem-tren-dai-ngan-ha](./chuyen-tau-dem-tren-dai-ngan-ha.md)
+
+
+
 ---
 
 ## I’m interested in Obsidian
