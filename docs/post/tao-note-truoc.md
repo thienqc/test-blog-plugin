@@ -5,6 +5,7 @@ share: true
 tags:
   - test
 date: 2024-01-04
+slug: 
 ---
 
 # Tạo note trước nè
@@ -37,4 +38,4 @@ To learn more about how to format your notes using Markdown, refer to [Format yo
 
 ## Learn more
 
-Learn how to [link notes](../../Link%20notes.md) to create a network of connected thoughts.
+Learn how to [link notes](./link-notes.md) to create a network of connected thoughts.
