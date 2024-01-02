@@ -14,3 +14,5 @@ date: 2024-01-02
 [Plugins make Obsidian special for you](./Plugins%20make%20Obsidian%20special%20for%20you.md)
 
 [Tạo note trước](./tao-note-truoc.md)
+
+[start-here](./start-here.md)
