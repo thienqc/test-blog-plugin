@@ -7,8 +7,11 @@ title: Chuyến tàu đêm trên dải ngân hà
 
 # Chuyến tàu đêm trên dải ngân hà
 
-[link-notes](./link-notes.md)
+[Link notes](Link%20notes.md)
 
-[start-here](./start-here.md)
+[Start Here](Start%20Here.md)
 
-[toi-nay-troi-dep](./toi-nay-troi-dep.md)
+[Tối nay trời đẹp](T%E1%BB%91i%20nay%20tr%E1%BB%9Di%20%C4%91%E1%BA%B9p.md)
+
+[Note mới nè](Note%20m%E1%BB%9Bi%20n%C3%A8.md)
+
