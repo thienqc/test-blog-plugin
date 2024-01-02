@@ -12,7 +12,7 @@ slug: start-here
 
 [chuyen-tau-dem-tren-dai-ngan-ha](./chuyen-tau-dem-tren-dai-ngan-ha.md)
 
-
+[hom-nay-sinh-nhat](./hom-nay-sinh-nhat.md)
 
 ---
 
